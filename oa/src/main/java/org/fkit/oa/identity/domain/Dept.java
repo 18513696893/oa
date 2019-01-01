@@ -26,8 +26,8 @@ public class Dept implements Serializable {
     @JoinColumn(name = "MODIFIER", referencedColumnName = "USER_ID",
             foreignKey=@ForeignKey(name = "FK_DEPT_MODIFIER"))
     private User modifier;
+	
 	@Column(name = "MODIFY_DATE")
-
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date modifyData;
 
